@@ -7,7 +7,7 @@ const tourSchema = mongoose.Schema(
     price: { type: Number, required: true },
     duration: { type: String, required: true },
     travelers: { type: Number, required: true },
-    desc: { type: Number, required: true },
+    desc: { type: String, required: true },
     img: { type: String, required: true },
   },
   { timestamps: true }
