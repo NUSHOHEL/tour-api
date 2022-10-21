@@ -5,3 +5,9 @@ exports.postAtour = async (req, res) => {
   const newtour = await tours.save();
   res.status(200).json(newtour);
 };
+exports.getAllTour = async (req, res) => {
+  try {
+    const result = await tour.find({});
+    res.status(200).json(result);
+  } catch (error) {}
+};
